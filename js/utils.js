@@ -1,3 +1,9 @@
+async function getFileList() {
+  const response = await fetch("data/index.json");
+  const data = await response.json();
+  return data.files.sort(); // 升序排列
+}
+
 async function loadCSV(path) {
   const response = await fetch(path);
   const text = await response.text();
@@ -7,8 +13,11 @@ async function loadCSV(path) {
 function parseCSV(text) {
   const lines = text.trim().split("\n");
   lines.shift();
+
   return lines.map(line => {
-    const [word, sentence, chinese] = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+    const [word, sentence, chinese] =
+      line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+
     return {
       word: word.replace(/"/g, ""),
       sentence: sentence.replace(/"/g, ""),

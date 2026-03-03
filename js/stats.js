@@ -1,11 +1,12 @@
 async function init() {
-  const files = ["20260303.csv"];
+  const files = await getFileList();
+
   let dates = [];
   let counts = [];
 
   for (let f of files) {
     const data = await loadCSV("data/" + f);
-    dates.push(f.replace(".csv",""));
+    dates.push(f.replace(".csv", ""));
     counts.push(data.length);
   }
 
@@ -15,8 +16,12 @@ async function init() {
       labels: dates,
       datasets: [{
         label: "Words Added",
-        data: counts
+        data: counts,
+        borderWidth: 2
       }]
+    },
+    options: {
+      responsive: true
     }
   });
 }

@@ -2,13 +2,17 @@ let words = [];
 let currentIndex = 0;
 
 async function init() {
-  const files = ["20260303.csv"];
+  const files = await getFileList();
+
   let allWords = [];
+
   for (let f of files) {
     const data = await loadCSV("data/" + f);
     allWords = allWords.concat(data);
   }
+
   words = shuffle(allWords).slice(0, 20);
+
   showWord();
 }
 
@@ -19,11 +23,12 @@ function showWord() {
   document.getElementById("meaning").classList.add("hidden");
 }
 
-document.getElementById("remember").onclick = () => nextWord();
+document.getElementById("remember").onclick = nextWord;
 
 document.getElementById("forget").onclick = () => {
   const sentence = document.getElementById("sentence");
   const meaning = document.getElementById("meaning");
+
   if (sentence.classList.contains("hidden")) {
     sentence.innerText = words[currentIndex].sentence;
     sentence.classList.remove("hidden");
