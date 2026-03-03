@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>学习统计 - Word Master</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8">
+  <title>Statistics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="bg-gray-50">
-    <nav class="px-8 py-4 bg-white/80 backdrop-blur-md sticky top-0">
-        <a href="index.html" class="text-blue-600">← 返回复习</a>
-    </nav>
-    <main class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-3xl shadow-sm">
-        <h2 class="text-2xl font-semibold mb-8">学习进度统计</h2>
-        <canvas id="statsChart"></canvas>
-    </main>
+<body>
 
-    <script>
-        const ctx = document.getElementById('statsChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['03-01', '03-02', '03-03'], // 实际需动态获取
-                datasets: [{
-                    label: '新增单词数',
-                    data: [20, 15, 25], // 实际需动态获取
-                    borderColor: '#007AFF',
-                    tension: 0.4,
-                    fill: true,
-                    backgroundColor: 'rgba(0, 122, 255, 0.05)'
-                }]
-            },
-            options: {
-                plugins: { legend: { display: false } },
-                scales: { y: { beginAtZero: true } }
-            }
-        });
-    </script>
+<nav>
+  <a href="index.html">Today</a>
+  <a href="random.html">Random 20</a>
+  <a href="stats.html">Stats</a>
+</nav>
+
+<main>
+  <canvas id="statsChart"></canvas>
+</main>
+
+<script src="js/utils.js"></script>
+<script src="js/stats.js"></script>
 </body>
 </html>
