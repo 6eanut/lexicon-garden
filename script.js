@@ -2,25 +2,46 @@ let wordList = [];
 let currentIndex = 0;
 let step = 0; // 0: 仅单词, 1: 显示例句, 2: 显示中文
 
-// 自动寻找最近一天的文件
 async function fetchLatestWords() {
     const today = new Date();
-    // 尝试寻找最近7天内的文件
-    for(let i=0; i<7; i++) {
+    const displayWord = document.getElementById('display-word');
+    
+    // 尝试寻找最近 7 天内的文件
+    for (let i = 0; i < 7; i++) {
         const date = new Date(today);
         date.setDate(today.getDate() - i);
-        const dateStr = date.toISOString().split('T')[0].replace(/-/g, '');
+        
+        // 格式化日期为 YYYYMMDD
+        const y = date.getFullYear();
+        const m = String(date.getMonth() + 1).padStart(2, '0');
+        const d = String(date.getDate()).padStart(2, '0');
+        const dateStr = `${y}${m}${d}`;
+
         try {
-            const response = await fetch(`data/${dateStr}.csv`);
+            // 注意：添加 ./ 确保相对路径正确
+            const response = await fetch(`./data/${dateStr}.csv`);
+            
             if (response.ok) {
                 const text = await response.text();
+                const lines = text.trim().split('\n');
+                
+                // 排除只有表头的情况
+                if (lines.length <= 1) continue; 
+
                 parseCSV(text);
+                currentIndex = 0; // 重置索引
                 renderCard();
-                return;
+                console.log(`成功加载数据: ${dateStr}.csv`);
+                return; // 找到后立即退出循环
             }
-        } catch (e) { continue; }
+        } catch (e) {
+            console.error(`未找到 ${dateStr}.csv，继续尝试前一天...`);
+        }
     }
-    document.getElementById('display-word').innerText = "未找到近期词库";
+
+    // 如果循环结束还没 return，说明没找到文件
+    displayWord.innerText = "花园里还没有种子 (未找到近期 CSV)";
+    document.getElementById('action-area').style.display = 'none';
 }
 
 function parseCSV(text) {
