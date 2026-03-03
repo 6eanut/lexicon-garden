@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Master - 极简背单词</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <nav class="flex justify-between items-center px-8 py-4 bg-white/80 backdrop-blur-md sticky top-0 z-10">
+        <div class="text-xl font-semibold tracking-tight">Word Master</div>
+        <div class="space-x-6">
+            <a href="index.html" class="hover:text-blue-600 transition">今日复习</a>
+            <a href="#" onclick="startRandomTest()" class="hover:text-blue-600 transition">随机测试</a>
+            <a href="stats.html" class="hover:text-blue-600 transition">学习统计</a>
+        </div>
+    </nav>
+
+    <main class="max-w-2xl mx-auto mt-20 px-4">
+        <div id="card-container" class="bg-white rounded-3xl p-10 shadow-sm border border-gray-100 min-h-[400px] flex flex-col justify-center items-center text-center transition-all duration-500">
+            <h1 class="text-4xl font-bold mb-4" id="display-word">加载中...</h1>
+            <p id="display-extra" class="text-lg text-gray-500 mt-4 opacity-0 transition-opacity duration-300"></p>
+            
+            <div id="action-area" class="mt-12 space-y-4 w-full">
+                <button onclick="handleKnown(true)" class="w-full py-4 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition">我记得</button>
+                <button onclick="handleKnown(false)" class="w-full py-4 border border-gray-200 rounded-full font-medium hover:bg-gray-50 transition">不记得了</button>
+            </div>
+        </div>
+        <p id="progress" class="text-center mt-6 text-sm text-gray-400"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

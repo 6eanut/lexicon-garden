@@ -1,0 +1,17 @@
+body {
+    /* 模拟苹果的字体系统 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.shadow-sm {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+button {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
