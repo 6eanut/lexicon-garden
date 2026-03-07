@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Statistics</title>
+  <title>Vocabulary Summary</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -16,10 +15,16 @@
 </nav>
 
 <main>
-  <canvas id="statsChart"></canvas>
+  <div id="summary-container">
+    <div id="summary-header">
+      <h1>Vocabulary Summary</h1>
+      <button id="shuffle-btn">Shuffle</button>
+    </div>
+    <div id="summary-content"></div>
+  </div>
 </main>
 
 <script src="js/utils.js"></script>
-<script src="js/stats.js"></script>
+<script src="js/summary.js"></script>
 </body>
 </html>

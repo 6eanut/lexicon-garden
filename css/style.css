@@ -23,7 +23,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
+  padding: 20px;
 }
 
 #word-container {
@@ -79,4 +80,102 @@ button {
 
 .hidden {
   display: none;
+}
+
+/* Summary page styles */
+#summary-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+}
+
+#summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+#summary-header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#shuffle-btn {
+  background: #0071e3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.date-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.date-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f5f5f7;
+}
+
+.words-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.word-card {
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #0071e3;
+}
+
+.word-line {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1d1d1f;
+}
+
+.word-line .word-text {
+  margin-right: 12px;
+}
+
+.word-line .phonetic {
+  font-size: 16px;
+  color: #86868b;
+  font-weight: 400;
+}
+
+.sentence-line {
+  font-size: 18px;
+  color: #424245;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.meaning-line {
+  font-size: 16px;
+  color: #86868b;
+  line-height: 1.4;
 }
