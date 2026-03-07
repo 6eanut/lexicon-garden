@@ -1,25 +1,25 @@
-word,sentence,chinese
-curious,"The cat was curious about the new box.",adj. 好奇的；好打听的；奇特的，不寻常的
-curiosity,"Her curiosity led her to explore the old library.",n. 好奇心；求知欲；奇物，珍品
-currency,"The Euro is the official currency of many European countries.",n. 货币；通货；流通，流行
-current,"The current in the river is very strong today.",adj. 当前的；现行的；通用的 n. 水流；电流；趋势
-cumulative,"The cumulative effect of daily practice is significant.",adj. 累积的，渐增的
-average,"The average temperature in July is 30 degrees.",n. 平均数；一般水平 adj. 平均的；普通的 v. 平均为
-award,"She won an award for her excellent performance.",n. 奖，奖品；裁定 v. 授予，给予；判给
-aware,"Are you aware of the meeting time?",adj. 知道的，意识到的；有…意识的
-awkward,"He felt awkward at the party because he didn't know anyone.",adj. 尴尬的；笨拙的；难处理的；不方便的
-extravagant,"She was criticized for her extravagant spending.",adj. 奢侈的，浪费的；过分的，过度的
-invoke,"The software will invoke a security check.",v. 调用（程序）；援引（法律、原则）；祈求（神助）；引起
-invisible,"Bacteria are invisible to the naked eye.",adj. 看不见的，隐形的；无形的；不引人注目的
-extrem,"This is an extrem case that requires special attention.",adj. 极端的，极度的；偏激的 n. 极端；极端事物
-involve,"The job involves a lot of travel.",v. 包含，需要；使卷入，牵涉；使参与
-reverse,"Please reverse the car into the parking space.",v. 颠倒；逆转；撤销 n. 相反；背面；失败 adj. 相反的；背面的
-purchase,"He made a large purchase at the electronics store.",v. 购买 n. 购买；购买的东西
-pursue,"She decided to pursue a career in medicine.",v. 追求；从事；继续进行；追赶
-pursuit,"His pursuit of happiness led him to travel the world.",n. 追求；追赶；职业，事业
-puzzle,"The crossword puzzle was very challenging.",n. 谜；难题；困惑 v. 使迷惑，使为难
-issue,"The magazine publishes a new issue every month.",n. 问题；发行物；一期 v. 发出，发布；发行
-item,"Please check each item on the shopping list.",n. 项目；条款；一件商品（或物品）
-review,"The teacher will review the key points before the exam.",n. 复习；回顾；评论；审查 v. 复习；回顾；评论；审查
-overturn,"The court decided to overturn the previous ruling.",v. 推翻，撤销；使翻倒 n. 推翻；倾覆
-overwhelm,"The sudden workload can overwhelm a new employee.",v. 淹没；压倒，使难以承受；击败
+word,phonetic,sentence,chinese
+curious,/ˈkjʊriəs/,The curious child asked many questions about the stars.,adj. 好奇的；好打听的；奇特的，不寻常的
+curiosity,/ˌkjʊriˈɑːsəti/,Her curiosity about ancient cultures led her to study archaeology.,n. 好奇心；求知欲；奇物，珍品
+currency,/ˈkɜːrənsi/,The US dollar is a major global currency.,n. 货币；通货；流通，流行
+current,/ˈkɜːrənt/,The river's current was very strong after the storm.,adj. 当前的；现行的；通用的 n. （水、气、电）流；趋势，潮流
+cumulative,/ˈkjuːmjəleɪtɪv/,The cumulative effect of daily exercise is improved health.,adj. 累积的，渐增的
+average,/ˈævərɪdʒ/,The average temperature in July is 30 degrees Celsius.,n. 平均数；一般水平 adj. 平均的；普通的，平常的 v. 平均为
+award,/əˈwɔːrd/,She received an award for her excellent performance.,n. 奖，奖品；裁定 v. 授予，颁发；判给
+aware,/əˈwer/,He was not aware of the changes to the schedule.,adj. 知道的，意识到的；有…意识的
+awkward,/ˈɔːkwərd/,He felt awkward at the formal dinner party.,adj. 尴尬的；笨拙的，不灵活的；难处理的
+extravagant,/ɪkˈstrævəɡənt/,She made an extravagant purchase on her vacation.,adj. 奢侈的，浪费的；过度的，过分的
+invoke,/ɪnˈvoʊk/,The lawyer will invoke a precedent to support his case.,v. 援引，引用（法律、权威等）；唤起，引起（感情、形象）；祈求（神助）
+invisible,/ɪnˈvɪzəbl/,Air is invisible but essential for life.,adj. 看不见的，隐形的；无形的；不引人注目的
+extrem,/ɪkˈstriːm/,This is an extrem case that requires special attention.,adj. 极端的；极度的；偏激的 n. 极端；极度
+involve,/ɪnˈvɑːlv/,The job involves a lot of travel.,v. 包含，需要；使卷入，牵涉；使参与
+reverse,/rɪˈvɜːrs/,Please reverse the car into the parking space.,v. 颠倒；倒车；彻底转变 n. 相反；背面；失败 adj. 相反的；背面的
+purchase,/ˈpɜːrtʃəs/,He saved money to purchase a new bicycle.,v. 购买 n. 购买；购买的东西
+pursue,/pərˈsuː/,She decided to pursue a career in medicine.,v. 追求，致力于；追赶，追踪；继续进行
+pursuit,/pərˈsuːt/,His pursuit of happiness led him to travel the world.,n. 追求，寻求；追赶；职业，事业
+puzzle,/ˈpʌzl/,The crossword puzzle in the newspaper was very challenging.,n. 谜；难题；拼图游戏 v. 使困惑，使为难
+issue,/ˈɪʃuː/,The magazine publishes a new issue every month.,n. 问题；发行物；一期 v. 发布，颁布；发出；流出
+item,/ˈaɪtəm/,Please check each item on the shopping list.,n. 项目，条目；一件商品（或物品）；一则新闻
+review,/rɪˈvjuː/,The teacher will review the lesson before the test.,n. 复习；回顾；评论；审查 v. 复习；回顾；评论；审查
+overturn,/ˌoʊvərˈtɜːrn/,The court decided to overturn the previous ruling.,v. 推翻，撤销（判决等）；使翻倒，倾覆 n. 推翻；倾覆
+overwhelm,/ˌoʊvərˈwelm/,The sudden news seemed to overwhelm her with emotion.,v. 使不知所措，使难以承受；淹没，覆盖；压倒，击败

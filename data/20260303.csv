@@ -1,24 +1,24 @@
-word,sentence,chinese
-survey,The company conducted a survey to understand customer needs.,n. 调查；测量；概览 v. 调查；测量；审视
-suspect,The police suspect that he was not at home last night.,v. 怀疑；猜想 n. 嫌疑犯 adj. 可疑的
-suspicion,She had a suspicion that the answer was wrong.,n. 怀疑；疑心；一点儿
-suspicious,The man's behavior was very suspicious.,adj. 怀疑的；可疑的；不信任的
-surpass,His latest test scores surpass all his previous ones.,v. 超过；胜过；优于
-root,The tree's roots go deep into the soil.,n. 根；根源；基础 v. 生根；扎根；根源在于
-route,This is the quickest route to the airport.,n. 路线；途径；航线 v. 按某路线发送
-routine,Brushing teeth is part of my morning routine.,n. 常规；例行公事；程序 adj. 常规的；例行的
-rule,Follow the rules of the game.,n. 规则；规定；统治 v. 统治；支配；裁决
-ruler,Use a ruler to draw a straight line.,n. 尺子；统治者；支配者
-switch,Please switch off the light when you leave.,n. 开关；转换；改变 v. 转换；改变；交换
-swing,The children love to play on the swing.,n. 秋千；摇摆；挥动 v. 摇摆；挥舞；突然转向
-swam,He swam across the river yesterday.,v. swim的过去式，游泳
-swear,I swear I will tell the truth.,v. 发誓；咒骂；郑重承诺
-suspend,The school decided to suspend classes due to the storm.,v. 暂停；悬挂；使停职
-revive,The doctor managed to revive the patient.,v. 使苏醒；复兴；恢复生机
-reward,Hard work often brings its own reward.,n. 报酬；奖励；回报 v. 奖励；奖赏；报答
-rival,The two companies are fierce rivals in the market.,n. 竞争对手；敌手 v. 与...竞争；比得上 adj. 竞争的
-roll,Please roll the dice to start the game.,v. 滚动；卷；碾 n. 卷；名单；滚动
-survive,Few plants can survive in the desert.,v. 幸存；活下来；比...活得长
-survival,Clean water is essential for survival.,n. 生存；幸存；残存物
-surname,Her surname is Smith.,n. 姓；姓氏
-surplus,The factory has a surpluse of raw materials.,n. 过剩；盈余；剩余 adj. 过剩的；多余的
+word,phonetic,sentence,chinese
+survey,/sərˈveɪ/,The company conducted a survey to understand customer needs.,n. 调查；测量；概览 v. 调查；测量；审视
+suspect,/səˈspɛkt/,The police suspect that he was not at home last night.,v. 怀疑；猜想 n. 嫌疑犯 adj. 可疑的
+suspicion,/səˈspɪʃən/,Her strange behavior raised my suspicion.,n. 怀疑；疑心；一点儿
+suspicious,/səˈspɪʃəs/,The manager was suspicious of the new employee's background.,adj. 怀疑的；可疑的；多疑的
+surpass,/sərˈpæs/,Her latest test scores surpass all her previous ones.,v. 超过；胜过；优于
+root,/rut/,The roots of the tree go deep into the soil.,n. 根；根源；基础 v. 生根；扎根；根源在于
+route,/raʊt/,This is the quickest route to the airport.,n. 路线；途径；航线 v. 按某路线发送
+routine,/ruˈtin/,My morning routine includes exercise and reading.,n. 常规；例行程序；一套动作 adj. 常规的；例行的
+rule,/rul/,The most important rule is to be on time.,n. 规则；统治；尺 v. 统治；支配；裁决
+ruler,/ˈrulər/,Use a ruler to draw a straight line.,n. 尺子；统治者
+switch,/swɪtʃ/,Please switch off the lights when you leave.,n. 开关；转换；改变 v. 转换；改变；交换
+swing,/swɪŋ/,The children love to play on the swing in the park.,n. 秋千；摇摆；挥杆 v. 摇摆；挥舞；突然转向
+swam,/swæm/,She swam across the lake in under an hour.,v. swim的过去式（游泳）
+swear,/swɛr/,I swear I will tell the truth.,v. 发誓；咒骂；郑重保证
+suspend,/səˈspɛnd/,The school decided to suspend the student for a week.,v. 暂停；悬挂；使停职
+revive,/rɪˈvaɪv/,The paramedics worked to revive the unconscious man.,v. 使苏醒；复兴；重新流行
+reward,/rɪˈwɔrd/,Hard work often brings its own reward.,n. 报酬；奖赏；回报 v. 奖励；奖赏
+rival,/ˈraɪvəl/,The two companies are fierce rivals in the market.,n. 竞争对手；敌手 v. 与...竞争；比得上 adj. 竞争的
+roll,/roʊl/,Please roll the dice to start the game.,v. 滚动；卷；碾 n. 卷；名单；滚动
+survive,/sərˈvaɪv/,Few plants can survive in the desert.,v. 幸存；活下来；比...活得长
+survival,/sərˈvaɪvəl/,Finding clean water is key to survival in the wilderness.,n. 生存；幸存；残存物
+surname,/ˈsɜrˌneɪm/,What is your surname?,n. 姓；姓氏
+surplus,/ˈsɜrpləs/,The factory sold its surplus materials at a discount.,n. 剩余；盈余；顺差 adj. 过剩的；多余的
