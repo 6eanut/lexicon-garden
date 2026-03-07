@@ -19,6 +19,7 @@ async function init() {
 function showWord() {
   const w = words[currentIndex];
   document.getElementById("word").innerText = w.word;
+  document.getElementById("phonetic").innerText = w.phonetic;
   document.getElementById("sentence").classList.add("hidden");
   document.getElementById("meaning").classList.add("hidden");
 }

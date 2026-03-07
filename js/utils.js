@@ -15,11 +15,12 @@ function parseCSV(text) {
   lines.shift();
 
   return lines.map(line => {
-    const [word, sentence, chinese] =
+    const [word, phonetic, sentence, chinese] =
       line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
 
     return {
       word: word.replace(/"/g, ""),
+      phonetic: phonetic.replace(/"/g, ""),
       sentence: sentence.replace(/"/g, ""),
       chinese: chinese.replace(/"/g, "")
     };
