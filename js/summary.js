@@ -39,7 +39,10 @@ function displayWords() {
   const container = document.getElementById('summary-content');
   container.innerHTML = '';
 
-  Object.keys(groupedWords).forEach(date => {
+  // Ensure dates are displayed in descending order (newest first)
+  const sortedDates = Object.keys(groupedWords).sort((a, b) => b.localeCompare(a));
+
+  sortedDates.forEach(date => {
     const dateSection = document.createElement('div');
     dateSection.className = 'date-section';
 
