@@ -25,8 +25,10 @@ async function init() {
 function groupWordsByDate() {
   groupedWords = {};
 
-  // Sort dates in descending order (newest first)
-  const dates = [...new Set(allWords.map(w => w.date))].sort().reverse();
+  // Sort dates in descending order (newest first) using a compare function
+  // to ensure correct numeric order even with string sorting.
+  const dates = [...new Set(allWords.map(w => w.date))]
+    .sort((a, b) => b.localeCompare(a));
 
   dates.forEach(date => {
     groupedWords[date] = allWords.filter(w => w.date === date);

@@ -1,20 +1,40 @@
 async function init() {
   const files = await getFileList();
 
-  let dates = [];
-  let counts = [];
+  let dateCountMap = {};
   let totalWords = 0;
 
-  // Process each file
+  // Process each file to build map
+  files.forEach(f => {
+    const dateStr = f.replace(".csv", "");
+    dateCountMap[dateStr] = 0; // initialize, will fill later
+  });
+
+  // read files and populate counts
   for (let f of files) {
     const data = await loadCSV("data/" + f);
     const dateStr = f.replace(".csv", "");
-
-    // Format date for display
-    const formattedDate = formatDateForChart(dateStr);
-    dates.push(formattedDate);
-    counts.push(data.length);
+    dateCountMap[dateStr] = data.length;
     totalWords += data.length;
+  }
+
+  // generate full date range between first and last
+  const allDates = Object.keys(dateCountMap).sort();
+  const startDate = parseDate(allDates[0]);
+  const endDate = parseDate(allDates[allDates.length - 1]);
+
+  let current = new Date(startDate);
+  let labels = [];
+  let counts = [];
+
+  while (current <= endDate) {
+    const y = current.getFullYear();
+    const m = String(current.getMonth() + 1).padStart(2, '0');
+    const d = String(current.getDate()).padStart(2, '0');
+    const key = `${y}${m}${d}`;
+    labels.push(formatDateForChart(key));
+    counts.push(dateCountMap[key] || 0);
+    current.setDate(current.getDate() + 1);
   }
 
   // Update total words display
@@ -24,7 +44,7 @@ async function init() {
   new Chart(document.getElementById("statsChart"), {
     type: "line",
     data: {
-      labels: dates,
+      labels: labels,
       datasets: [{
         label: "Words Learned",
         data: counts,
@@ -129,6 +149,13 @@ function formatDateForChart(dateStr) {
   const day = dateStr.substring(6, 8);
 
   return `${month}/${day}`;
+}
+
+function parseDate(dateStr) {
+  const y = parseInt(dateStr.slice(0, 4));
+  const m = parseInt(dateStr.slice(4, 6)) - 1;
+  const d = parseInt(dateStr.slice(6, 8));
+  return new Date(y, m, d);
 }
 
 init();
